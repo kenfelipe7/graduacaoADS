@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+	<title>Praticando Javascript - Exercício 1</title>
+</head>
+<body>
+	<div id="exibe_resultado"> Resultado:  </div>
+    
+</body>
+	<!-- Incorporando códigos Javascript diretamente na página -->
+	<script type="text/javascript">
+        
+        var n1 = prompt("Insira o primeiro número: ");
+		var n2 = prompt("Insira o segundo número: ");
+        var operacao = prompt("Qual operação você gostaria de utilizar + , - , * ou / ?")
+
+        if (operacao == '+'){
+            resultado = soma(n1, n2);
+
+        }
+        if (operacao == '-'){
+            resultado = diminui(n1, n2);
+
+        }
+    
+        if (operacao == '*'){
+            resultado = multiplica(n1,n2);
+
+        }
+        if (operacao == '/'){
+            resultado = divide(n1, n2);
+
+        }
+    
+        alert ('O resultado é ' + resultado);
+
+		function divide(n1,n2){
+
+			return parseInt(n1) / parseInt(n2);
+        }
+        function soma(n1,n2){
+            
+            return parseInt(n1) + parseInt(n2);
+            
+        }
+        function diminui(n1,n2){
+            
+            return parseInt(n1) - parseInt(n2);
+        }
+        function multiplica(n1,n2){
+            
+            return parseInt(n1) * parseInt(n2);
+        }
+        
+        
+		
+	</script>
+</html>
